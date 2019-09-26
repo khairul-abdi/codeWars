@@ -1,0 +1,5 @@
+function getAges(sum, difference) {
+
+
+
+};
