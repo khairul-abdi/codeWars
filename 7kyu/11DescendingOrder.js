@@ -26,15 +26,36 @@
 // console.log(descendingOrder(011)) //2110
 // console.log(descendingOrder(01), 11) //2110
 
+// function descendingOrder(n) {
+//   let arr = n.toString().split('');
+//   let arrNum = [];
+//   for (var i = 0; i < arr.length; i++) {
+//     arrNum.push(parseInt(arr[i]));
+//   }
+//   let sorted = arrNum.join('');
+//   return parseInt(sorted);
+// }
+
 function descendingOrder(n) {
-    let arr = n.toString().split('');
-    let arrNum = [];
-    for (var i = 0; i < arr.length; i++) {
-        arrNum.push(parseInt(arr[i]));
-    }
-    let sorted = arrNum.join('');
-    return parseInt(sorted);
+  let arr = n.toString().split('');
+  let arrNum = [];
+  // console.log(arr);
+  for (var i = 0; i < arr.length; i++) {
+    arrNum.push(parseInt(arr[i]));
+    // console.log(arrNum)
+  }
+
+  let sorted = arrNum.sort(function (a, b) {
+    return b - a
+  });
+  let sorted2 = sorted.join('');
+  return parseInt(sorted2);
 }
+
+// function descendingOrder(n) {
+//   return parseInt(String(n).split('').sort().reverse().join(''))
+// }
+
 
 console.log(descendingOrder(0), 0)
 console.log(descendingOrder(1), 1)
