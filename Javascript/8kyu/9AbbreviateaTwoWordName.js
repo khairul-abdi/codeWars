@@ -32,21 +32,17 @@ function abbrevName(name) {
     } else {
       temp += name[i];
     }
-
-    // (name[i] == ' ') ? (result.push(temp), (temp = '')) : (name[i] == name[name.length - 1]) ? (temp += name[i], (result.push(temp))) : (temp += name[i])
   }
   result.push(temp);
+  // console.log('RESULT : ', result); //Digunakan untuk memisahkan tiap kata ke dalam array
 
-  console.log(result);
-  for (let i = 0; i < result.length; i++) {
-    for (let j = 0; j < result[i].length; j++) {
-      if (result[i][j] == result[i][0]) {
-        output.push(result[i][j]);
-      }
+  for (let i = 0; i < result.length; i++) { // Proses ambil huruf pertama 
+    if ([i][0] == [i][0]) {
+      output.push(result[i][0]);
     }
   }
 
-  // console.log(output)
+  // console.log('OUTPUT : ', output)
   return `${output[0].toUpperCase()}.${output[1].toUpperCase()}`;
 }
 
@@ -56,10 +52,12 @@ console.log(abbrevName("Evan Cole"), "E.C");
 console.log(abbrevName("P Favuzzi"), "P.F");
 console.log(abbrevName("Daid Mendieta"), "D.M");
 console.log(abbrevName("Ca yo"), "C.Y");
+console.log(abbrevName("george clooney"), "G.C");
 
-function abbrevName(name) {
-  var nameArray = name.split(" ");
-  return (nameArray[0][0] + "." + nameArray[1][0]).toUpperCase();
-}
+
+// function abbrevName(name) {
+//   var nameArray = name.split(" ");
+//   return (nameArray[0][0] + "." + nameArray[1][0]).toUpperCase();
+// }
 
 console.log(abbrevName("Tony greenheck"));
