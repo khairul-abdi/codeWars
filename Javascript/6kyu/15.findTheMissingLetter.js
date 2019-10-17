@@ -17,37 +17,41 @@
 //     });
 //   });
 
-function findMissingLetter1(array) {
-    var huruf = 'abcdefghijklmnopqrstuvwxyz'
-    // let hurufBesar = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-    let count = 0
 
-    for (let i = 0; i < array.length; i++) {
-        let found = false
-        for (var j = 0; j < huruf.length; j++) {
-            if (array[i].toLowerCase() == huruf[j].toLowerCase()) {
-                found = true
-                console.log('huruf[j] == ',
-                    huruf[j], '--', true)
-                count = j
-            }
-        }
-        if (found == false) {
-            return huruf[count]
-        }
-    }
 
-    // return ' ';
-}
-console.log(findMissingLetter1(['a', 'b', 'c', 'd', 'f']), 'e')
-console.log(findMissingLetter1(['O', 'Q', 'R', 'S']), 'P');
+
+
+
+// function findMissingLetter1(array) {
+//     var huruf = 'abcdefghijklmnopqrstuvwxyz'
+//     // let hurufBesar = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+//     let count = 0
+
+//     for (let i = 0; i < array.length; i++) {
+//         let found = false
+//         for (var j = 0; j < huruf.length; j++) {
+//             if (array[i].toLowerCase() == huruf[j].toLowerCase()) {
+//                 found = true
+//                 console.log('huruf[j] == ',
+//                     huruf[j], '--', true)
+//                 count = j
+//             }
+//         }
+//         if (found == false) {
+//             return huruf[count]
+//         }
+//     }
+
+//     // return ' ';
+// }
+// console.log(findMissingLetter1(['a', 'b', 'c', 'd', 'f']), 'e')
+// console.log(findMissingLetter1(['O', 'Q', 'R', 'S']), 'P');
 
 console.log('----------------------------------------------------')
 
 
 function findMissingLetter(array) {
     var besarAtauKecil;
-    var jawaban;
 
     if (array[0] == array[0].toUpperCase()) {
         besarAtauKecil = true;
@@ -61,12 +65,12 @@ function findMissingLetter(array) {
     }
 
     var hurufPertama = alphabet.indexOf(array[0]);
-    console.log("hurufPertama: ", hurufPertama);
+    // console.log("hurufPertama: ", hurufPertama);
 
-    for (var counter = 1; counter < array.length; counter++) {
-        var indeks = alphabet.indexOf(array[counter]);
-        console.log("indeks: ", indeks);
-        if (indeks == hurufPertama + counter) {
+    for (var i = 1; i < array.length; i++) {
+        var indeks = alphabet.indexOf(array[i]);
+        // console.log("indeks: ", indeks);
+        if (indeks == hurufPertama + i) {
             true
         } else {
             return jawaban = alphabet[indeks - 1];
@@ -75,4 +79,4 @@ function findMissingLetter(array) {
 }
 
 console.log(findMissingLetter(["N", "P", "Q", "R", "S"]), 'O');
-// console.log(findMissingLetter(['a', 'b', 'c', 'd', 'f']), 'e');
+console.log(findMissingLetter(['a', 'b', 'c', 'd', 'f']), 'e');

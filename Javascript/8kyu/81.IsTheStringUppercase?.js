@@ -1,5 +1,5 @@
 String.prototype.isUpperCase = function () {
-    return this.toString() === this.toUpperCase()
+  return this.toString() === this.toUpperCase()
 }
 
 console.log('c'.isUpperCase(), false, 'c is not upper case');

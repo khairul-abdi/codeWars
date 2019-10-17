@@ -1,14 +1,33 @@
 function solution(str) {
 
-    let output = []
-    let temp = ''
-    for (let i = 0; i < str.length; i += 2) {
-        (i != str.length - 1) ? temp += str[i] + str[i + 1]: temp += `${str[i]}_`
-        output.push(temp)
-        temp = ''
-    }
-    return output
+  let output = []
+  let temp = ''
+  for (let i = 0; i < str.length; i += 2) {
+    (i != str.length - 1) ? temp += str[i] + str[i + 1]: temp += `${str[i]}_`
+    output.push(temp)
+    temp = ''
+  }
+  return output
 }
+
+function solution(str) {
+
+  let output = []
+  let temp = ''
+  for (let i = 0; i < str.length; i += 2) {
+    if (str.length % 2 == 0) {
+      output.push(str[i] + str[i + 1])
+    } else if (str.length % 2 != 0) {
+      if (i != str.length) {
+        output.push(str[i] + str[i + 1])
+      } else if (i == undefined) {
+        output.push(str[i] + '_')
+      }
+    }
+  }
+  return output
+}
+
 console.log(solution('abc')) // should return ['ab', 'c_']
 console.log(solution('abcdef')) // should return ['ab', 'cd', 'ef']
 
