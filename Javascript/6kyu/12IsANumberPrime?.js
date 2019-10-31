@@ -33,3 +33,14 @@ You can assume you will be given an integer input.
 You can not assume that the integer will be only positive.You may be given negative numbers as well(or 0).
 There are no fancy optimizations required, but still the most trivial solutions might time out.Try to find a solution which does not loop all the way up to n.
 */
+
+/*
+=====SOAL======
+pasteDisini
+*/
+/*
+CARA ORANG LAIN
+1. ======>
+2. ======>
+3. ======>
+*/

@@ -26,7 +26,6 @@ function pigIt(str) {
                         tempD += arr[i][0]
                     }
                     // console.log('TEMP D : ', tempD)
-
                 }
             } else {
                 tempB += arr[i][j]
@@ -41,23 +40,26 @@ function pigIt(str) {
         tempD = ''
         tempB = ''
     }
-    // console.log(tempD)
-    // console.log(tempB)
-    console.log('Output = ', output)
+    // console.log('TEMP D : ', tempD)
+    // console.log('TEMP B :', tempB)
+    // console.log('Output = ', output)
     let result = ''
-    for (let i = 0; i < output.length; i++) {
-        // if (output[i] != output[output.length - 1]) {
-        //     result += output[i] + ' '
-        // } else if (output[i] == output[output.length - 1]) {
-        //     result += output[i]
-        // }
 
+    // for (let i = 0; i < output.length; i++) {
+    //     if (i == output.length - 1) {
+    //         result += output[i]
+    //         break
+    //     }
+
+    //     if (output[i]) {
+    //         result += output[i] + ' '
+    //     }
+    // }
+
+    for (let i = 0; i < output.length; i++) {
         if (i == output.length - 1) {
             result += output[i]
-            break
-        }
-
-        if (output[i]) {
+        } else {
             result += output[i] + ' '
         }
     }
@@ -66,11 +68,11 @@ function pigIt(str) {
     return result
 }
 
-// console.log(pigIt('Pig latin is cool'), 'igPay atinlay siay oolcay')
+console.log(pigIt('Pig latin is cool'), 'igPay atinlay siay oolcay')
 // console.log(pigIt('This is my string'), 'hisTay siay ymay tringsay')
 // console.log(pigIt('Barba non facit philosophum'), 'arbaBay onnay acitfay hilosophumpay')
 // console.log(pigIt('Dura lex sed lex'), '===uraDay exlay edsay exlay')
-console.log(pigIt('O tempora o mores !'), 'Oay emporatay oay oresmay !')
+// console.log(pigIt('O tempora o mores !'), 'Oay emporatay oay oresmay !')
 
 
 
@@ -95,4 +97,36 @@ function pigIt(str){
 2. ======>
 
 pigIt = s => s.split(' ').map(e => e.substr(1) + e[0] + 'ay').join(' ');
+
+3. ======>
+
+function pigIt(str){
+  var arrayStr = str.split(''); 
+  var word = '';
+  var sentence  = '';
+  var begining  = true;
+  var firstLetter = '';
+  
+  arrayStr.forEach(function(letter, i){  
+      if (begining) {
+          firstLetter = letter;
+          begining = false;
+      } else { 
+          if (letter === ' ' || i == arrayStr.length) {
+              sentence += firstLetter; 
+              sentence += 'ay '; 
+              firstLetter = '';
+              begining = true;
+          } else {
+              sentence += letter;
+          }
+      } 
+      if (i + 1 == arrayStr.length) {
+          sentence += firstLetter; 
+          sentence += 'ay'; 
+      } 
+  });
+  return sentence;
+}
+
 */

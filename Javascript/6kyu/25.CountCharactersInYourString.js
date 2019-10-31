@@ -1,17 +1,17 @@
 const count = string => {
 
-    let obj = {}
-    if (string === '') return obj
+  let obj = {}
+  if (string === '') return obj
 
-    for (let i = 0; i < string.length; i++) {
-        (obj[string[i]] == undefined) ? obj[string[i]] = 1: obj[string[i]]++
-    }
-    return obj;
+  for (let i = 0; i < string.length; i++) {
+    obj[string[i]] == undefined ? obj[string[i]] = 1 : obj[string[i]]++
+  }
+  return obj;
 }
 
-console.log(count("aba"), {
-    a: 2,
-    b: 1
+console.log(count("abazab"), {
+  a: 2,
+  b: 1
 });
 console.log(count(""), {});
 

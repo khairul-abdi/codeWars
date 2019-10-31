@@ -1,38 +1,38 @@
 function iqTest(numbers) {
 
-    let arr = []
-    let str = ''
-    for (let i = 0; i < numbers.length; i++) {
-        if (numbers[i] != ' ') {
-            str += numbers[i]
-        } else {
-            arr.push(Number(str))
-            str = ''
-        }
-    }
-    if (str) {
-        arr.push(Number(str))
-    }
-    // console.log(arr)
-
-    let ganjil = []
-    let genap = []
-
-    for (let i = 0; i < arr.length; i++) {
-        if (Number(arr[i]) % 2 == 0) {
-            genap.push(i)
-        } else if (Number(arr[i]) % 2 != 0) {
-            ganjil.push(i)
-        }
-    }
-    // console.log('GENAP : ', genap)
-    // console.log('GANJIL : ', ganjil)
-
-    if (genap.length == 1) {
-        return genap[0] + 1
+  let arr = []
+  let str = ''
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] != ' ') {
+      str += numbers[i]
     } else {
-        return ganjil[0] + 1
+      arr.push(Number(str))
+      str = ''
     }
+  }
+  if (str) {
+    arr.push(Number(str))
+  }
+  console.log(arr)
+
+  let ganjil = []
+  let genap = []
+
+  for (let i = 0; i < arr.length; i++) {
+    if (Number(arr[i]) % 2 == 0) {
+      genap.push(i)
+    } else if (Number(arr[i]) % 2 != 0) {
+      ganjil.push(i)
+    }
+  }
+  // console.log('GENAP : ', genap)
+  // console.log('GANJIL : ', ganjil)
+
+  // if (genap.length == 1) {
+  //   return genap[0] + 1
+  // } else {
+  //   return ganjil[0] + 1
+  // }
 
 }
 

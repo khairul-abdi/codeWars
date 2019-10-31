@@ -1,22 +1,17 @@
 function removeSmallest(numbers) {
-    let numMin = 0
-    numMin = numbers[0]
-    for (let i = 1; i < numbers.length; i++) {
-        if (numMin > numbers[i]) {
-            numMin = numbers[i]
-        }
-    }
-    // console.log(numMin)
+  let numMin = numbers[0]
+  for (let i = 1; i < numbers.length; i++) {
+    if (numMin > numbers[i]) numMin = numbers[i]
+  }
+  // console.log(numMin)
 
-    let indeksLow = numbers.indexOf(numMin)
-    // console.log(indeksLow)
-    let result = []
-    for (let j = 0; j < numbers.length; j++) {
-        if (j != indeksLow) {
-            result.push(numbers[j])
-        }
-    }
-    return result
+  let indeksLow = numbers.indexOf(numMin)
+  // console.log(indeksLow)
+  let result = []
+  for (let j = 0; j < numbers.length; j++) {
+    if (j != indeksLow) result.push(numbers[j])
+  }
+  return result
 }
 
 console.log(removeSmallest([1, 2, 3, 4, 5]), [2, 3, 4, 5], "Wrong result for [1, 2, 3, 4, 5]");
