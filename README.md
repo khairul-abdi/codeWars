@@ -9,10 +9,10 @@ Codewars is a site where programmers can train on programming challenges called 
 ### [:fox_face: Clan: Hacktiv8 ](https://www.codewars.com/users/khairul-abdi/)
 
 ## Languages:
-## - [x]JavaScript
-## - [x]Python
-## - [x]Go
-## - [x]SQL
+**Strong text**JavaScript
+**Strong text**Python
+**Strong text**Go
+**Strong text**SQL
 
 ## Solved JavaScript Kata:
 ### [:open_file_folder: 4 Kyu](https://github.com/andreassosilo/codewars/tree/master/JavaScript/4kyu)
