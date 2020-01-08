@@ -3,7 +3,7 @@ Codewars is a site where programmers can train on programming challenges called 
 
 <img height="270" src="https://miro.medium.com/max/1050/1*a9L7ZZhi8hIAJmWXmSaPXw.png">
 
-[<img src="https://miro.medium.com/max/1050/1*a9L7ZZhi8hIAJmWXmSaPXw.png">](https://www.codewars.com/users/khairul-abdi/)
+[<img src="https://www.codewars.com/users/khairul-abdi/badges/large">](https://www.codewars.com/users/khairul-abdi/)
 
 ### [:crossed_swords: User: Khairul Abdi ](https://www.codewars.com/users/khairul-abdi/)  
 ### [:fox_face: Clan: Hacktiv8 ](https://www.codewars.com/users/khairul-abdi/)
