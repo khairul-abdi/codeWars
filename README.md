@@ -8,12 +8,6 @@ Codewars is a site where programmers can train on programming challenges called 
 ### [:crossed_swords: User: Khairul Abdi ](https://www.codewars.com/users/khairul-abdi/)  
 ### [:fox_face: Clan: Hacktiv8 ](https://www.codewars.com/users/khairul-abdi/)
 
-## Languages:
-**Strong text**JavaScript
-**Strong text**Python
-**Strong text**Go
-**Strong text**SQL
-
 ## Solved JavaScript Kata:
 ### [:open_file_folder: 4 Kyu](https://github.com/andreassosilo/codewars/tree/master/JavaScript/4kyu)
 - :cherry_blossom:
