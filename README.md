@@ -8,6 +8,11 @@ Codewars is a site where programmers can train on programming challenges called 
 ### [:crossed_swords: User: Khairul Abdi ](https://www.codewars.com/users/khairul-abdi/)  
 ### [:fox_face: Clan: Hacktiv8 ](https://www.codewars.com/users/khairul-abdi/)
 
+
+## Solved Go Language Kata:
+### [:open_file_folder: 8 Kyu](https://github.com/khairul-abdi/codewars/tree/master/Golang/8kyu)
+- :cherry_blossom:
+[**Square(n)_Sum**](https://github.com/khairul-abdi/codewars/blob/master/Golang/8kyu/Square_n_Sum.go)
 ## Solved JavaScript Kata:
 ### [:open_file_folder: 4 Kyu](https://github.com/andreassosilo/codewars/tree/master/JavaScript/4kyu)
 - :cherry_blossom:
@@ -240,3 +245,4 @@ Codewars is a site where programmers can train on programming challenges called 
 ---
 ### Number of views: 
 [![HitCount](http://hits.dwyl.io/andreassosilo/https://githubcom/andreassosilo/codewars.svg)](http://hits.dwyl.io/andreassosilo/https://githubcom/andreassosilo/codewars)
+
