@@ -13,6 +13,10 @@ Codewars is a site where programmers can train on programming challenges called 
 ### [:open_file_folder: 8 Kyu](https://github.com/khairul-abdi/codewars/tree/master/Golang/8kyu)
 - :cherry_blossom:
 [**Square(n)_Sum**](https://github.com/khairul-abdi/codewars/blob/master/Golang/8kyu/Square_n_Sum.go)
+
+### [:open_file_folder: 7 Kyu](https://github.com/khairul-abdi/codewars/tree/master/Golang/8kyu)
+- :cherry_blossom:
+[**Functional_Addition**](https://github.com/khairul-abdi/codewars/blob/master/Golang/7kyu/Functional_Addition.go)
 ## Solved JavaScript Kata:
 ### [:open_file_folder: 4 Kyu](https://github.com/andreassosilo/codewars/tree/master/JavaScript/4kyu)
 - :cherry_blossom:
